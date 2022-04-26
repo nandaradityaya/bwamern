@@ -77,6 +77,7 @@ Button.propTypes = {
   href: propTypes.string,
   target: propTypes.string, //untuk link eksternal
   className: propTypes.string,
+  isPrimary: propTypes.bool,
   isExternal: propTypes.bool,
   isDisabled: propTypes.bool, //property utk mengetahui apakah link tsb disabled
   isLoading: propTypes.bool, //property utk animasi loading
