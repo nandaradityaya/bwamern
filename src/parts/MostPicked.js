@@ -10,7 +10,7 @@ export default function MostPicked(props) {
           return (
             <div
               key={`mostpicked-${index}`}
-              className={`item column-4${index === 0 ? " card-1" : " card-2"}`}
+              className={`item column-4${index === 0 ? " row-2" : " row-1"}`}
             >
               <div className="card card-featured">
                 <div className="tag">
@@ -27,7 +27,7 @@ export default function MostPicked(props) {
                 <div className="meta-wrapper">
                   <Button
                     type="link"
-                    className="streched-link d-block text-white"
+                    className="stretched-link d-block text-white"
                     href={`/properties/${item._id}`}
                   >
                     <h5>{item.name}</h5>

@@ -1,7 +1,7 @@
 .container-grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr); // 12 column utk satu framenya
-  grid-auto-rows: minimax(185px, auto); // auto utk menentukan ukuran row
+  grid-auto-rows: minmax(185px, auto); // auto utk menentukan ukuran row
   grid-auto-flow: dense; // menentukan gridnya dense
   row-gap: 30px;
   column-gap: 30px;
@@ -9,7 +9,7 @@
   z-index: 3;
 
   &.sm {
-    grid-auto-rows: minimax(245px, auto);
+    grid-auto-rows: minmax(245px, auto);
     row-gap: 10px;
     column-gap: 10px;
   }
